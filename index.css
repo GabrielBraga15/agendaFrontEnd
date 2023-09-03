@@ -1,0 +1,429 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0px;
+  background-image: url(./bodyImage.jpg);
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  max-height: 100%;
+  /* border: black solid 2px; */
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+}
+.header-left {
+  width: 30%;
+ align-items: center;
+ margin-top: 50px;
+}
+.header-center {
+  margin-top: 20px;
+  width: 30%;
+  text-align: center;
+  font-size: 20px;
+}
+.header-right {
+  width: 30%;
+}
+.logo-right {
+  margin-bottom: 40px;
+  margin-left: 75%;
+  width: 25%;
+  height: 70%;
+}
+.botão-voltar {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botão-voltar:hover {
+  background-color: #333; /* Cor de fundo escura ao passar o mouse */
+  color: white; /* Mantém o texto branco ao passar o mouse */
+}
+
+.grid-container {
+  padding: 10px; 
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+}
+.side-bar-left {
+  /* border: solid 2px black; */
+  border-radius: 10px;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+.avatar {
+  display: flex;
+  margin-left: 35%;
+  margin-top: 10%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  }
+  .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+  .tecnico-description {
+    text-align: center;
+    margin-left: 10px;
+  }
+  .top-side-bar-left {
+    height: 33%;
+  }
+  .mid-side-bar-left {
+    width: 100%;
+    height: 30%;
+  }
+.button-sidebar-left {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+.button-reagendadas1{
+  margin-top: 18%;
+  height: 50px;
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button-reagendadas1:hover {
+  background-color: #333; /* Cor de fundo escura ao passar o mouse */
+  color: white; /* Mantém o texto branco ao passar o mouse */
+}
+.button-deslogar {
+  margin-top: 18%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button-deslogar:hover {
+  background-color: #333; /* Cor de fundo escura ao passar o mouse */
+  color: white; /* Mantém o texto branco ao passar o mouse */
+}
+.container {
+  display: flex;
+  background-color: white;
+  /* border: solid 2px black; */
+  border-radius: 10px;
+  width: 95%;
+  height: 100vh;
+  max-height: 100vh;
+  margin-left: 20px;
+}
+.OS {
+  text-align: center;
+}
+.side-bar-right {
+  /* border: solid 2px black; */
+  border-radius: 10px;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+.button-container {
+ width: 100%; /* Botões ocupam a largura total do container */
+ padding: 10px;
+ margin-left: -3px;
+ margin-top: 92vh;
+}
+.button-os1 {
+  width: 30%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  line-height: 1;
+}
+.button-os1:hover {
+  background-color: #333; /* Cor de fundo escura ao passar o mouse */
+  color: white; /* Mantém o texto branco ao passar o mouse */
+}
+.button-os2 {
+  width: 30%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  line-height: 1;
+}
+.button-os2:hover {
+  background-color: #333; /* Cor de fundo escura ao passar o mouse */
+  color: white; /* Mantém o texto branco ao passar o mouse */
+}
+.button-os3 {
+  width: 30%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  line-height: 1;
+}
+.button-os3:hover {
+  background-color: #333; /* Cor de fundo escura ao passar o mouse */
+  color: white; /* Mantém o texto branco ao passar o mouse */
+}
+/* ... suas regras de estilo acima ... */
+
+@media (max-width: 1440px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .button-os1,
+  .button-os2,
+  .button-os3 {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+
+  .side-bar-left {
+    height: 100%;
+    text-align: center;
+  }
+  .top-side-bar-left {
+    height: 33%;
+  }
+  .avatar {
+    margin-left: 30%;
+  }
+}
+.mid-side-bar-left {
+  height: 33%;
+}
+
+.button-sidebar-left {
+  /* height: 33%; */
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+}
+.button-reagendadas1 {
+  /* height: 50px; */
+}
+
+@media (max-width: 1024px) {
+  .button-reagendadas1,
+  .button-deslogar {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  .button-sidebar-left {
+    margin-top: 51vh;
+  }
+
+  .button-os1,
+  .button-os2,
+  .button-os3 {
+    width: 90%;
+    height: 40px;
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .avatar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  .side-bar-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tecnico-description {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 900px) {
+.grid-container {
+  grid-template-columns: 1fr 4fr 1fr;
+}
+  .side-bar-left {
+  width: 100%;
+}
+  .container {
+  
+}
+}
+@media (max-width: 768px) {
+  .Header {
+    height: 100px;
+    width: 100%;
+  }
+  .header-left {
+width: 33%;
+  }
+  .header-center {
+    width: 33%; 
+  }
+  .header-right {
+    width: 33%;
+  }
+  .botão-voltar {
+    width: 60px;
+    height: 30px;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-bottom: -5px;
+  }
+  .header-center {
+    font-size: 15px;
+  }
+
+  .grid-container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .button-deslogar {
+    width: 40%;
+    height: 53%;
+  }
+
+  .button-sidebar-left {
+    margin-top: 58vh;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+.avatar {
+  height: 130px;
+  width: 130px;
+}
+  .tecnico-description {
+    text-align: center;
+    font-size: 14px;
+  }
+  .logo-right {
+    margin-top: 20px;
+    width: 35%;
+    height: auto;
+    margin-left: 65%;
+  }
+}
+@media (max-width: 425px){
+.Header {
+  min-width: 104%;
+  width: 104%;
+  height: 30%;
+}
+.header-center {
+  font-size: 12px;
+}
+.header-left {
+  margin-top: 10px;
+}
+.logo-right {
+  margin-top: -10px;
+  margin-left: 80px;
+  width:70px;
+}
+.side-bar-left {
+  display: none;
+}
+.grid-container {
+  padding: 5px; 
+  display: grid;
+  grid-template-columns: 4fr;
+}
+.side-bar-right{
+  height: 90%;
+  width: 453px;
+  margin-left: 0px;
+  margin-top: 5px;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 30%
+}
+.button-os1 {
+width:100px ;
+}
+.button-os2 {
+  width:100px 
+}
+.button-os3 {
+  width:100px 
+}
+.container {
+  height: 680px;
+  width: 410px;
+}
+.button-os3 {
+margin-right: 15px;
+}
+}
+
+@media (max-width: 375px) {
+  .Header{
+width: 115%;
+}
+.container {
+  height: 100vh;
+}
+.side-bar-right {
+  margin-left:-5px ;
+}
+}
+@media (max-width: 320px) {
+  .Header{
+    width: 135%;
+  }
+ .side-bar-right {
+  margin-top: 20px;
+ }
+
+}
